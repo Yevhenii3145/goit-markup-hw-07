@@ -1,0 +1,22 @@
+.our-clients {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+    
+    }
+    
+    &__icon {
+        width: 170px;
+        height: 92px;
+        fill: #AFB1B8;
+        transition-duration: $main-transition-time;
+        transition-timing-function: $main-transition-function;
+
+        &:hover {
+            fill: $main-hover-focus-font-color;
+        }
+    }
+    
+}

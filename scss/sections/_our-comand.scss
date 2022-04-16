@@ -1,0 +1,67 @@
+.section--bg-dark {
+    background-color: $another-back-color;
+}
+
+.our-comand {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        background-color: $main-back-color;
+    }
+    @media screen and (max-width: 480px) {
+        &__item {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and  (min-width: 481px) and (max-width: 1200px) {
+        &__item {
+            width: calc(50% - 15px);
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 1201px) {
+        &__item {
+            width: 270px;
+        }
+    }
+    &__image {
+        width: 100%;
+    }
+    &__description {
+        background-color: $main-back-color;
+        padding: 30px 32px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+    @media screen and (max-width: 480px) {
+        &__description {
+            padding-bottom: 24px;
+        }
+    }
+    @media screen and  (min-width: 481px) and (max-width: 1200px) {
+        &__description {
+            padding-bottom: 24px;
+        }
+    }
+    &__name {
+        color: $button-font-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+    &__text {
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}

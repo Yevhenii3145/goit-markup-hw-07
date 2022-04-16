@@ -13,50 +13,52 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <!-- <link rel="stylesheet" href="./scss/main.css"> -->
+    <link rel="stylesheet" href="./scss/main.css">
 
 </head>
 
 <body>
     <!-- Верхняя линия портфолио -->
-    <header class="header header__bottom-border">
-        <div class="container">
-            <div class="header__content-orientation">
-
-                <nav class="nav">
-                    <a class="logo" href="./index.html"><span class="logo__word">Web</span>Studio</a>
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="./index.html">Студия</a>
-                        </li>
-                        <li class="nav__item nav__item--decor">
-                            <a class="nav__link nav__link--activ" href="./portfolio.html">Портфолио</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="header__contact-list auto-margin">
-                    <li>
-                        <a class="header__contact-link" href="mailto:info@devstudio.com">
-                            <svg class="header__contact-icon">
-                                <use href="./images/spryte.svg#icon-envelope"></use>
-                            </svg>info@devstudio.com</a>
+    <header class="header">
+        <div class="container header__container">
+            
+            <nav class="nav">
+                <a class="logo" href="./index.html"><span class="logo__word">Web</span>Studio</a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="./index.html">Студия</a>
                     </li>
-                    <li class="header__contact-item">
-                        <a class="header__contact-link" href="tel:+380961111111">
-                            <svg class="header__contact-icon">
-                                <use href="./images/spryte.svg#icon-smartphone"></use>
-                            </svg>+38 096 111 11 11</a>
+                    <li class="nav__item nav__item--decor">
+                        <a class="nav__link nav__link--activ" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Контакты</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
+
+            <ul class="header__contact-list">
+                <li>
+                    <a class="header__contact-link" href="mailto:info@devstudio.com">
+                        <svg class="header__contact-icon">
+                            <use href="./images/spryte.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="header__contact-item">
+                    <a class="header__contact-link" href="tel:+380961111111">
+                        <svg class="header__contact-icon">
+                            <use href="./images/spryte.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+        
         </div>
     </header>
     <main>
         <!-- Портфолио -->
-        <section class="portfolio">
+        <section class="section portfolio__section">
             <div class="container">
                 <h2 class="header-hidden">Примеры наших работ</h2>
                 <ul class="portfolio__button-list">
@@ -217,7 +219,7 @@
 
             <div class="footer__second-box">
                 <p class="footer__header">Присоединяйтесь</p>
-                <ul class="card-item__social-list">
+                <ul class="social-list">
                     <li class="social-list__item">
                         <a class="social-list__link" href="#">
                             <svg class="social-list__icon">
@@ -252,7 +254,7 @@
                 <p class="footer__header">Подпишитесь на рассылку</p>
             
                 <input class="footer__email-input" type="email" placeholder="E-mail">
-                <button class="footer__button" type="submit">
+                <button class="button" type="submit">
                         <span class="footer__button-text">Подписаться
                             <svg class="footer__button-icon">
                                 <use href="./images/form.svg#icon-send"></use>
@@ -262,6 +264,7 @@
             </div>
         </div>
     </footer>
+    
 
 </body>
 

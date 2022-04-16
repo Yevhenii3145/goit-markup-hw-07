@@ -1,0 +1,91 @@
+.header {
+    padding: 25px 15px;
+    border-bottom: 1px solid #ECECEC;
+  
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.nav {
+    display: flex;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        color: rgba(33, 33, 33, 1);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        
+        transition-duration:  $main-transition-time;
+        transition-timing-function: $main-transition-function;
+
+        &:hover,
+        &:focus {
+            color: $main-hover-focus-font-color;
+        }
+        &--activ {
+            color: $main-hover-focus-font-color;
+        }
+        
+    }
+    &__item {
+        margin-left: 50px;
+        &--decor {
+            position: relative;
+    
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                left: 0px;
+                bottom: -33px;
+                background: #2196F3;
+                border-radius: 2px;
+            }
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    
+}
+.header__contact-list {
+    display: flex;
+    align-items: center;
+}
+.header__contact-link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: rgba(117, 117, 117, 1);
+    transition-duration: $main-transition-time;
+    transition-timing-function: $main-transition-function;
+    &:hover, &:focus {
+        color: $main-hover-focus-font-color;
+    }
+    &:hover .header__contact-icon,
+    &:focus .header__contact-icon {
+        fill: $main-hover-focus-font-color;
+    }
+}
+.header__contact-icon {
+    margin-right: 10px;
+    max-width: 16px;
+    max-height: 16px;
+    fill: #757575;
+    transition-duration: $main-transition-time;
+    transition-timing-function: $main-transition-function;
+}
+.header__contact-item {
+    margin-left: 50px;
+}

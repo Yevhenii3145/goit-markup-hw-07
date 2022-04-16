@@ -1,0 +1,102 @@
+.footer {
+    max-width: 100vw;
+    background-color: rgba(47, 48, 58, 1);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    & .container {
+        display: flex;
+    }
+
+    &__ferst-box {
+        /* max-width: 230px; */
+        margin-right: 70px;
+    }
+    &__adress {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__adress-link,
+    &__mail-link,
+    &__fone-link {
+        color: $footer-font-color;
+        font-size: 14px;
+        line-height: 1.71;
+        font-style: normal;
+    }
+    
+    &__mail-link {
+        margin: 9px 0;
+    }
+    
+    &__adress-link {
+        color: $footer-main-color;
+    }
+    &__second-box {
+        padding-top: 12px;
+        margin-right: 93px;
+    }
+    
+    &__header {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $footer-main-color;
+        margin-bottom: 20px;
+    }
+    &__second-box .social-list__link {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    &__second-box .social-list__link:hover {
+        background-color: $footer-hover-focus-color;
+    }
+    
+    &__third-box {
+        padding-top: 12px;
+    }
+    &__email-input {
+        box-sizing: border-box;
+        background-color: rgba(47, 48, 58, 1);
+        height: 50px;
+        width: 358px;
+        margin-right: 12px;
+        padding: 15px 16px;
+        /* border: none; */
+        color: $footer-main-color;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+        &:focus-within {
+            /* border-color: inherit; */
+            // outline: none;
+            border: none;
+            outline: 1px solid #2196F3;
+        }
+        
+        &::placeholder {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+            margin: 15px, 0px, 15px, 16px;
+            
+        }
+        
+    }
+}
+.footer__adress-link:hover,
+.footer__adress-link:focus,
+.footer__mail-link:hover,
+.footer__mail-link:focus,
+.footer__fone-link:hover,
+.footer__fone:focus {
+    color: $footer-hover-focus-color;
+    cursor: pointer;
+}

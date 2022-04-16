@@ -13,17 +13,17 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./scss/main.css">
 
 </head>
 
 <body>
 
     <!-- Верхняя линия -->
-    <header class="header header__bottom-border">
-        <div class="container">
-            <div class="header__content-orientation">
-
+    <header class="header">
+        <div class="container header__container">
+            
                 <nav class="nav">
                     <a class="logo" href="./index.html"><span class="logo__word">Web</span>Studio</a>
                     <ul class="nav__list">
@@ -38,6 +38,7 @@
                         </li>
                     </ul>
                 </nav>
+                
                 <ul class="header__contact-list">
                     <li>
                         <a class="header__contact-link" href="mailto:info@devstudio.com">
@@ -53,7 +54,7 @@
 
                     </li>
                 </ul>
-            </div>
+            
         </div>
     </header>
 
@@ -63,7 +64,8 @@
         <section class="hero">
             <div class="hero__content">
                 <h1 class="hero__header">Эффективные решения для вашего бизнеса</h1>
-                <button data-modal-open type="button" class="hero__button">Заказать услугу</button>
+                <button data-modal-open type="button" class="button hero__button">Заказать услугу</button>
+                
                 <div  class="backdrop is-hidden" data-modal>
                     <div class="modal"> 
                         <div class="modal__button" data-modal-close></div>
@@ -113,21 +115,19 @@
                                 Соглашаюсь с рассылкой и принимаю <a class="form__checkbox-link" href="#">Условия договора</a>
                             </label>
                             
-                            <button class="form__button" type="submit">Отправить</button>
+                            <button class="button form__button" type="submit">Отправить</button>
                        </form>
                     </div> 
                 </div>
+               
             </div>
         </section>
 
-      
-        
-
         <!-- Особенности -->
-        <section class="advantages">
+        <section class="section">
             <div class="container">
                 <h2 class="header-hidden">Особенности компании</h2>
-                <ul class="advantages__list">
+                <ul class="advantages">
                     <li>
                         <div class="advantages__itemdecor">
                             <svg class="advantages__itemdecor-icon">
@@ -174,14 +174,9 @@
                         </p>
                     </li>
                 </ul>
-            </div>
-        </section>
-        <!-- Чем мы занимаемся -->
-        <section class="about-us">
-            <div class="container">
                 <h2 class="sections-header">Чем мы занимаемся</h2>
                 
-                    <ul class="about-us__list">
+                    <ul class="about-us">
                         <li class="about-us__card">
                             <img src="images/about-us/box-1.jpg" alt="Здесь изображен процесс написания кода"
                                 width="370">
@@ -198,20 +193,22 @@
                                 <p class="about-us__card-text">Дизайнерские решения</p>
                         </li>
                     </ul>
-                
             </div>
         </section>
+        
+       
         <!-- Наша команда -->
-        <section class="our-comand">
+
+        <section class="section section--bg-dark">
             <div class="container">
                 <h2 class="sections-header">Наша команда</h2>
-                <ul class="our-comand__list">
-                    <li class="our-comand__card-item">
-                        <img src="images/cards/card-1.jpg" alt="Фото Игоря Демьяненко" width="270">
-                        <div class="our-comand__card-container">
-                            <h3 class="card-item__name">Игорь Демьяненко</h3>
-                            <p class="card-item__text">Product Designer</p>
-                            <ul class="card-item__social-list">
+                <ul class="our-comand">
+                    <li class="our-comand__item">
+                        <img class="our-comand__image" src="images/cards/card-1.jpg" alt="Фото Игоря Демьяненко" width="270">
+                        <div class="our-comand__description">
+                            <h3 class="our-comand__name">Игорь Демьяненко</h3>
+                            <p class="our-comand__text">Product Designer</p>
+                            <ul class="social-list">
                                 <li class="social-list__item">
                                     <a class="social-list__link" href="#">
                                         <svg class="social-list__icon">
@@ -243,12 +240,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="our-comand__card-item">
-                        <img src="images/cards/card-2.jpg" alt="Фото Олечки Репиной" width="270">
-                        <div class="our-comand__card-container">
-                            <h3 class="card-item__name">Ольга Репина</h3>
-                            <p class="card-item__text">Frontend Developer</p>
-                            <ul class="card-item__social-list">
+                    <li class="our-comand__item">
+                        <img class="our-comand__image" src="images/cards/card-2.jpg" alt="Фото Олечки Репиной" width="270">
+                        <div class="our-comand__description">
+                            <h3 class="our-comand__name">Ольга Репина</h3>
+                            <p class="our-comand__text">Frontend Developer</p>
+                            <ul class="social-list">
                                 <li class="social-list__item">
                                     <a class="social-list__link" href="#">
                                         <svg class="social-list__icon">
@@ -280,12 +277,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="our-comand__card-item">
-                        <img src="images/cards/card-3.jpg" alt="Фото Николая Тарасова" width="270">
-                        <div class="our-comand__card-container">
-                            <h3 class="card-item__name">Николай Тарасов</h3>
-                            <p class="card-item__text">Marketing</p>
-                            <ul class="card-item__social-list">
+                    <li class="our-comand__item">
+                        <img class="our-comand__image" src="images/cards/card-3.jpg" alt="Фото Николая Тарасова" width="270">
+                        <div class="our-comand__description">
+                            <h3 class="our-comand__name">Николай Тарасов</h3>
+                            <p class="our-comand__text">Marketing</p>
+                            <ul class="social-list">
                                 <li class="social-list__item">
                                     <a class="social-list__link" href="#">
                                         <svg class="social-list__icon">
@@ -317,12 +314,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="our-comand__card-item">
-                        <img src="images/cards/card-4.jpg" alt="Фото Михаила Ермакова" width="270">
-                        <div class="our-comand__card-container">
-                            <h3 class="card-item__name">Михаил Ермаков</h3>
-                            <p class="card-item__text">UI Designer</p>
-                            <ul class="card-item__social-list">
+                    <li class="our-comand__item">
+                        <img class="our-comand__image" src="images/cards/card-4.jpg" alt="Фото Михаила Ермакова" width="270">
+                        <div class="our-comand__description">
+                            <h3 class="our-comand__name">Михаил Ермаков</h3>
+                            <p class="our-comand__text">UI Designer</p>
+                            <ul class="social-list">
                                 <li class="social-list__item">
                                     <a class="social-list__link" href="#">
                                         <svg class="social-list__icon">
@@ -331,7 +328,7 @@
                                     </a>
                                 </li>
                                 <li class="social-list__item">
-                                    <a class="csocial-list__link" href="#">
+                                    <a class="social-list__link" href="#">
                                         <svg class="social-list__icon">
                                             <use href="./images/spryte.svg#icon-twitter"></use>
                                         </svg>
@@ -357,11 +354,13 @@
                 </ul>
             </div>
         </section>
+        
+    
         <!-- Наши клиенты -->
-        <section class="our-clients">
+        <section class="section">
             <div class="container">
                 <h2 class="sections-header">Постоянные клиенты</h2>
-                <ul class="our-clients__list">
+                <ul class="our-clients">
                     <li class="our-clients__item">
                         <svg class="our-clients__icon">
                             <use href="./images/spryte.svg#icon-client-1"></use>
@@ -414,7 +413,7 @@
 
             <div class="footer__second-box">
                 <p class="footer__header">Присоединяйтесь</p>
-                <ul class="card-item__social-list">
+                <ul class="social-list">
                     <li class="social-list__item">
                         <a class="social-list__link" href="#">
                             <svg class="social-list__icon">
@@ -449,7 +448,7 @@
                 <p class="footer__header">Подпишитесь на рассылку</p>
             
                 <input class="footer__email-input" type="email" placeholder="E-mail">
-                <button class="footer__button" type="submit">
+                <button class="button" type="submit">
                         <span class="footer__button-text">Подписаться
                             <svg class="footer__button-icon">
                                 <use href="./images/form.svg#icon-send"></use>
